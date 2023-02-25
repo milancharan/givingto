@@ -1,376 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="./style.scss" />
-    <title>LoopLab</title>
-  </head>
-  <body id="home">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"> </span>
-        </button>
 
-        <a href="./index.html" class="navbar-brand">LoopLab</a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link">Home</a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Mogal Corporation</title>
+</head>
+
+<body>
+
+  <header class="container mx-auto ">
+    <nav class="flex-no-wrap relative border-b-orange-200 flex w-full items-center justify-between  lg:justify-start"
+      data-te-navbar-ref>
+      <div class="flex w-full flex-wrap items-center justify-between px-6">
+        <button
+          class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="[&>svg]:w-7">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+              <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+        <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1" data-te-collapse-item>
+          <a class="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
+            href="#">
+            <img src="./images/hau_gitschberge_horizontal1.png" alt="img" loading="lazy" />
+          </a>
+          <!-- Left links -->
+
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <!-- Icon -->
+          <ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                href="#" data-te-nav-link-ref>Home</a>
             </li>
-            <li class="nav-item">
-              <a href="#explore-Explore-section" class="nav-link">Explore</a>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Blog
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a href="#create-Create-section" class="nav-link">Create</a>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Features
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a href="#share-Share-section" class="nav-link">Share</a>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Categories
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" data-te-nav-link-ref>About</a>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" data-te-nav-link-ref>Contact</a>
+            </li>
+            <li class="lg:pr-2">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                    type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref aria-expanded="false"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Shop
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Another action</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                    </li>
+                    <hr
+                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" data-te-nav-link-ref>Portfolio</a>
+            </li>
+            <li class="relative lg:pr-2" data-te-dropdown-ref>
+              <a class="hidden-arrow mr-4 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#" id="dropdownMenuButton1" role="button" data-te-dropdown-toggle-ref aria-expanded="false">
+                <span class="[&>svg]:w-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                    <path fill-rule="evenodd"
+                      d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="absolute -mt-2.5 ml-2 rounded-full bg-red-700 py-0 px-1.5 text-xs text-white">1</span>
+              </a>
+              <ul
+                class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                <li>
+                  <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                    href="#" data-te-dropdown-item-ref>Action</a>
+                </li>
+                <li>
+                  <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                    href="#" data-te-dropdown-item-ref>Another action</a>
+                </li>
+                <li>
+                  <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                    href="#" data-te-dropdown-item-ref>Something else here</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
+        <!-- Right elements -->
       </div>
     </nav>
+  </header>
 
-    <section id="home-section">
-      <div class="dark-overlay">
-        <div class="home-inner">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 d-none d-lg-block">
-                <h1 class="display-4">
-                  Build <strong>social profiles</strong> and gain revenue and
-                  <profits>profits</profits>
-                </h1>
-                <div class="d-flex flex-row">
-                  <div class="p-4 align-self-start">
-                    <em class="fa fa-check"></em>
-                  </div>
-                  <div class="p-4 align-self-end">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus minus rerum, perferendis facilis ad at alias
-                    placeat. Autem excepturi eum facere libero assumenda ad.
-                    Libero architecto nostrum
-                  </div>
-                </div>
-
-                <div class="d-flex flex-row">
-                  <div class="p-4 align-self-start">
-                    <em class="fa fa-check"></em>
-                  </div>
-                  <div class="p-4 align-self-end">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus minus rerum, perferendis facilis ad at alias
-                    placeat. Autem excepturi eum facere libero assumenda ad.
-                    Libero architecto nostrum
-                  </div>
-                </div>
-
-                <div class="d-flex flex-row">
-                  <div class="p-4 align-self-start">
-                    <em class="fa fa-check" aria-hidden="true"></em>
-                  </div>
-                  <div class="p-4 align-self-end">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus minus rerum, perferendis facilis ad at alias
-                    placeat. Autem excepturi eum facere libero assumenda ad.
-                    Libero architecto nostrum
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex flex-row col-lg-4">
-                <div class="card bg-primary text-center card-form">
-                  <div class="card-body">
-                    <h3>Sign UP Today</h3>
-                    <p>Please fill out this form to register</p>
-                    <form>
-                      <div class="form-group m-2">
-                        <input
-                          type="text"
-                          class="form-control form-control-lg"
-                          placeholder="Username"
-                        />
-                      </div>
-                      <div class="form-group m-2">
-                        <input
-                          type="text"
-                          class="form-control form-control-lg"
-                          placeholder="Email"
-                        />
-                      </div>
-                      <div class="form-group m-2">
-                        <input
-                          type="text"
-                          class="form-control form-control-lg"
-                          placeholder="Password"
-                        />
-                      </div>
-                      <div class="form-group m-2">
-                        <input
-                          type="text"
-                          class="form-control form-control-lg"
-                          placeholder="Confrim Password"
-                        />
-                      </div>
-                      <input
-                        type="submit"
-                        value="Submit"
-                        class="btn btn-outline-light m-2"
-                      />
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <section class="ml-0 bg-blue-50 pb-8 mb-16">
+    <div class="container mx-auto">
+      <div class="flex justify-center">
+        <div class="img-1 mt-32 mx-40 ml-0">
+          <img src="./images/Rectangle65.png" alt="img" width="338" height="405">
+        </div>
+        <div class="img-2 mt-16 mx-40">
+          <!-- <img src="./images/Vector.png" alt="img"> -->
+          <img src="./images/Rectangle66.png" alt="img" width="338" height="405">
+          <div class="text-center text-2xl mt-16">Hey There</div>
+          <div class="text-center text-7xl mt-16">i'm Haus</div>
+          <!-- <img src="./images/Vector.png" alt="img"> -->
+        </div>
+        <div class="img-3 mt-32 mx-40 mr-0">
+          <img src="./images/Rectangle67.png" alt="img" width="338" height="405">
         </div>
       </div>
-    </section>
-
-    <section id="explore-Explore-section">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <div class="py-5">
-              <h1 class="display-4">Explore</h1>
-              <p class="lead">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia repudiandae, cupiditate quasi minus ipsa fugiat
-                molestias odio dolor, dignissimos incidunt corporis nostrum
-                delectus explicabo vitae ex aut veniam dicta autem.
-              </p>
-              <a href="" class="btn btn-outline-secondary">Find Out More </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="explore-section" class="bg-light text-muted py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="data:image/jpeg;base64,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"
-              alt="img"
-              class="img-fluid mb-3 rounded-circle"
-            />
-          </div>
-          <div class="col-md-6">
-            <h3>Explore & Connect</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              illum esse odio non, mollitia quos quidem aspernatur deserunt
-              adipisci, aliquid architecto, earum voluptate tempora impedit .
-            </p>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <em class="fa fa-check"></em>
-              </div>
-              <div class="p-4 align-self-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, voluptates dignissimos. Ipsam iusto iure et, illo
-                illum, sint odio asperiores molestias
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <em class="fa fa-check"></em>
-              </div>
-              <div class="p-4 align-self-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, voluptates dignissimos. Ipsam iusto iure et, illo
-                illum, sint odio asperiores molestias
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="create-Create-section" class="bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <div class="py-5">
-              <h1 class="display-4">Create</h1>
-              <p class="lead">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia repudiandae, cupiditate quasi minus ipsa fugiat
-                molestias odio dolor, dignissimos incidunt corporis nostrum
-                delectus explicabo vitae ex aut veniam dicta autem.
-              </p>
-              <a href="" class="btn btn-outline-light">Find Out More </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="create-section" class="py-5 bg-dark text-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Create your Passion</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              illum esse odio non, mollitia quos quidem aspernatur deserunt
-              adipisci, aliquid architecto, earum voluptate tempora impedit .
-            </p>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <em class="fa fa-check"></em>
-              </div>
-              <div class="p-4 align-self-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, voluptates dignissimos. Ipsam iusto iure et, illo
-                illum, sint odio asperiores molestias
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <em class="fa fa-check"></em>
-              </div>
-              <div class="p-4 align-self-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, voluptates dignissimos. Ipsam iusto iure et, illo
-                illum, sint odio asperiores molestias
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="data:image/jpeg;base64,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"
-              alt="img"
-              class="img-fluid mb-3 rounded-circle"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="share-Share-section" class="bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <div class="py-5">
-              <h1 class="display-4">Share</h1>
-              <p class="lead">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia repudiandae, cupiditate quasi minus ipsa fugiat
-                molestias odio dolor, dignissimos incidunt corporis nostrum
-                delectus explicabo vitae ex aut veniam dicta autem.
-              </p>
-              <a href="" class="btn btn-outline-light">Find Out More </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="share-section" class="py-5 bg-light text-muted">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="data:image/jpeg;base64,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"
-              alt="img"
-              class="img-fluid mb-3 rounded-circle"
-            />
-          </div>
-          <div class="col-md-6">
-            <h3>Share what you create</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              illum esse odio non, mollitia quos quidem aspernatur deserunt
-              adipisci, aliquid architecto, earum voluptate tempora impedit .
-            </p>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <em class="fa fa-check"></em>
-              </div>
-              <div class="p-4 align-self-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, voluptates dignissimos. Ipsam iusto iure et, illo
-                illum, sint odio asperiores molestias
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div class="p-4 align-self-start">
-                <em class="fa fa-check"></em>
-              </div>
-              <div class="p-4 align-self-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, voluptates dignissimos. Ipsam iusto iure et, illo
-                illum, sint odio asperiores molestias
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="main-footer" class="bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <div class="py4">
-              <h1 class="h3">LoopLAB</h1>
-              <p>Copyright &copy; 2023</p>
-              <button
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#contactModal"
-              >
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="modal fade text-dark" id="contactModal">
-      <div class="modal-dialog bg-white">
-        <div class="model-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactModalTitle">Contact Us</h5>
-            <button class="close" data-bs-dismiss="modal">
-              <span>&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary w-100">Submit</button>
-          </div>
-        </div>
+      <p class="text-xl text-center mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias hic
+        obcaecati, placeat consequuntur, rem, qui et architecto officiis ex esse quod cumque odit modi corporis aperiam
+        reiciendis facilis suscipit sunt inventore sit numquam ducimus consequatur? Dolore, quod! Cum nostrum quis
+        similique libero eius amet soluta porro consequatur voluptas laborum? Deleniti, nihil fugit et consectetur
+        facilis quod cumque obcaecati quam officia corporis, odit illum voluptates veritatis excepturi.</p>
+      <div class="flex justify-center">
+        <button type="button"
+          class="inline-block w-80 mt-8 text-xl tracking-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-third hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+          data-te-ripple-init>
+          READ THE WHOLE STORY
+        </button>
       </div>
     </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
 </html>
